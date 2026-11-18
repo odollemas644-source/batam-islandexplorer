@@ -1,4 +1,138 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-header { background-color: #007bff; color: white; padding: 20px; text-align: center; }
-nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-main { padding: 20px; max-width: 800px; margin: auto; background: white; min-height: 50vh; }
+/* === RESET & VARIABEL WARNA === */
+:root {
+    --primary-color: #0077b6; /* Biru laut */
+    --secondary-color: #00b4d8; /* Biru muda */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+a { text-decoration: none; color: var(--primary-color); }
+a:hover { color: var(--secondary-color); }
+
+/* === HEADER & NAVIGASI === */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li a { font-weight: 500; color: var(--text-dark); }
+nav ul li a:hover { color: var(--primary-color); }
+
+/* === HERO SECTION (Banner Depan) === */
+.hero {
+    background: linear-gradient(rgba(0, 119, 182, 0.8), rgba(0, 180, 216, 0.8)), url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 20px;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 30px; }
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover { background-color: var(--primary-color); color: var(--white); transform: translateY(-3px); }
+
+/* === KONTEN UTAMA === */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--primary-color); }
+
+/* === GRID ARTIKEL === */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    object-fit: cover;
+}
+
+.card-content { padding: 20px; }
+.card-content h3 { margin-bottom: 10px; font-size: 1.3rem; }
+.card-content p { color: var(--text-light); margin-bottom: 15px; font-size: 0.95rem; }
+
+/* === FOOTER === */
+footer {
+    background-color: #1a1a1a;
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer a { color: var(--secondary-color); }
+
+/* === RESPONSIVE (HP) === */
+@media (max-width: 768px) {
+    .nav-container { flex-direction: column; gap: 15px; }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+}

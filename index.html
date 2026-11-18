@@ -3,21 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batam Island Explorer</title>
+    <title>Batam Island Explorer - Panduan Liburan Batam</title>
+    <meta name="description" content="Panduan lengkap liburan ke Batam: itinerary, budget, hidden gems, dan tips praktis dari lokal.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- HEADER & NAVIGASI -->
     <header>
-        <h1>Batam Island Explorer</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="nav-container">
+            <div class="logo">Batam Explorer</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Destinasi</a></li>
+                    <li><a href="#">Itinerary</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>Selamat Datang!</h2>
-        <p>Ini adalah struktur dasar website kita. Siap diisi konten!</p>
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <h1>Jelajahi Keindahan Batam</h1>
+        <p>Temukan panduan liburan, hidden gems, dan itinerary terbaik untuk perjalanan tak terlupakanmu.</p>
+        <a href="#artikel" class="btn">Mulai Jelajah</a>
+    </section>
+
+    <!-- KONTEN UTAMA (DAFTAR ARTIKEL) -->
+    <main class="container" id="artikel">
+        <h2 class="section-title">Artikel Terbaru</h2>
+        
+        <div class="article-grid">
+            <!-- Kartu Artikel 1 -->
+            <article class="card">
+                <!-- Gambar pakai placeholder dulu, nanti bisa diganti -->
+                <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Itinerary Batam" class="card-img">
+                <div class="card-content">
+                    <h3><a href="artikel/itinerary-2d1n.html">Itinerary 2D1N di Batam dari Singapore</a></h3>
+                    <p>Rencana perjalanan lengkap 2 hari 1 malam dengan budget hemat tapi tetap seru.</p>
+                    <a href="artikel/itinerary-2d1n.html">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Kartu Artikel 2 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pantai Batam" class="card-img">
+                <div class="card-content">
+                    <h3><a href="artikel/hidden-gems.html">5 Hidden Gems Pantai di Batam</a></h3>
+                    <p>Bukan cuma Nagoya, ini deretan pantai eksotis yang wajib kamu kunjungi.</p>
+                    <a href="artikel/hidden-gems.html">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Kartu Artikel 3 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ferry Batam" class="card-img">
+                <div class="card-content">
+                    <h3><a href="artikel/transportasi.html">Cara ke Batam: Panduan Ferry & Transportasi</a></h3>
+                    <p>Informasi harga tiket, jadwal, dan tips biar gak bingung pas nyampe di pelabuhan.</p>
+                    <a href="artikel/transportasi.html">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+        </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Batam Island Explorer. Dibuat dengan ❤️ untuk para pelancong.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
 </body>
 </html>
