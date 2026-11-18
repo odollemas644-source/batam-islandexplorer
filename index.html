@@ -1,157 +1,76 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Batam Island Explorer | Jelajahi Keindahan Batam</title>
-  <meta name="description" content="Panduan wisata, itinerary, dan destinasi pantai terbaik di Batam dan pulau-pulau sekitarnya.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batam Island Explorer - Panduan Liburan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Tambahan khusus halaman depan */
+        .hero { text-align: center; padding: 80px 20px; background: #0f172a; color: white; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.8; }
+        .btn { background: var(--accent-color); color: white; padding: 12px 30px; border-radius: 30px; font-weight: 600; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-body { padding: 20px; }
+        .card-body h3 { margin: 10px 0; color: var(--primary-color); font-size: 1.2rem; }
+    </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="#home" class="logo"><i class="fa-solid fa-compass"></i> Batam Island Explorer</a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#destinasi">Destinasi</a></li>
-        <li><a href="#itinerary">Itinerary</a></li>
-        <li><a href="#tentang">Tentang</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Jelajahi Keindahan Batam</h1>
-          <p>Dari pantai berpasir putih sampai pulau-pulau kecil yang masih sepi. Temukan rute, tips, dan itinerary yang sudah kami coba sendiri.</p>
-          <a href="#destinasi" class="btn">Mulai Jelajahi</a>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-compass" style="color: var(--accent-color);"></i> Batam Island Explorer
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Destinasi</a></li>
+                    <li><a href="#">Itinerary</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </header>
+
+    <section class="hero">
+        <h1>Jelajahi Keindahan Batam</h1>
+        <p>Temukan panduan liburan, hidden gems, dan itinerary terbaik.</p>
+        <a href="#" class="btn">Mulai Jelajah</a>
     </section>
 
-    <!-- Artikel Terbaru -->
-    <section class="articles" id="destinasi">
-      <div class="container">
-        <div class="articles-head">
-          <h2 class="section-title">Artikel Terbaru</h2>
-          <p class="section-sub">Panduan perjalanan terbaru seputar Batam dan pulau-pulau di sekitarnya.</p>
-        </div>
-
-        <div class="grid" id="itinerary">
-          <article class="card">
-            <a href="artikel/itinerary-3d2n.html" class="card-img">
-              <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80" alt="Pantai berpasir putih dengan air laut jernih" loading="lazy">
+    <main class="grid">
+        <!-- KARTU ARTIKEL 1 -->
+        <article class="card">
+            <a href="artikel/template.html">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Pantai">
             </a>
             <div class="card-body">
-              <span class="tag">Itinerary</span>
-              <h3>Itinerary 3 Hari 2 Malam Keliling Batam dan Barelang</h3>
-              <time datetime="2026-11-10"><i class="fa-regular fa-calendar"></i>10 November 2026</time>
+                <span class="tag">Itinerary</span>
+                <h3><a href="artikel/template.html">Itinerary 3 Hari 2 Malam Batam</a></h3>
             </div>
-          </article>
+        </article>
 
-          <article class="card">
-            <a href="artikel/itinerary-3d2n.html" class="card-img">
-              <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=800&q=80" alt="Pantai tropis saat matahari terbenam" loading="lazy">
+        <!-- KARTU ARTIKEL 2 (Contoh) -->
+        <article class="card">
+            <a href="artikel/template.html">
+                <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=600&q=80" alt="Pulau">
             </a>
             <div class="card-body">
-              <span class="tag">Destinasi</span>
-              <h3>5 Pantai di Batam yang Cocok untuk Menikmati Sunset</h3>
-              <time datetime="2026-11-03"><i class="fa-regular fa-calendar"></i>3 November 2026</time>
+                <span class="tag">Hidden Gems</span>
+                <h3><a href="artikel/template.html">5 Pantai Tersembunyi di Batam</a></h3>
             </div>
-          </article>
+        </article>
+    </main>
 
-          <article class="card">
-            <a href="#" class="card-img">
-              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Snorkeling di laut jernih" loading="lazy">
-            </a>
-            <div class="card-body">
-              <span class="tag">Tips</span>
-              <h3>Panduan Island Hopping: Dari Pelabuhan sampai Pulau Terdekat</h3>
-              <time datetime="2026-10-27"><i class="fa-regular fa-calendar"></i>27 Oktober 2026</time>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <footer>
+        <p>&copy; 2026 Batam Island Explorer. Dibuat dengan ❤️ untuk para pelancong.</p>
+    </footer>
 
-    <!-- Kenapa Batam -->
-    <section id="tentang">
-      <div class="container why-grid">
-        <div class="why-text">
-          <h2 class="section-title">Kenapa Batam?</h2>
-          <p>Batam hanya sekitar 45 menit dari Singapura dengan feri, tapi suasananya jauh lebih santai. Pantai, jembatan ikonik, dan pulau-pulau kecil bisa dijelajahi dalam satu perjalanan singkat.</p>
-
-          <ul class="why-list">
-            <li>
-              <i class="fa-solid fa-ferry"></i>
-              <div><strong>Akses mudah</strong><span>Feri rutin dari Singapura dan Johor, plus bandara internasional.</span></div>
-            </li>
-            <li>
-              <i class="fa-solid fa-umbrella-beach"></i>
-              <div><strong>Pantai dan pulau beragam</strong><span>Dari pantai keluarga sampai pulau yang masih sepi.</span></div>
-            </li>
-            <li>
-              <i class="fa-solid fa-utensils"></i>
-              <div><strong>Kuliner dan harga bersahabat</strong><span>Seafood segar, kopi lokal, dan akomodasi untuk semua budget.</span></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="why-img">
-          <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=900&q=80" alt="Pemandangan pantai tropis dari atas" loading="lazy">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-inner">
-      <p>&copy; 2026 Batam Island Explorer. Semua hak dilindungi.</p>
-      <div class="socials">
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const navbar = document.getElementById('navbar');
-    const toggle = document.getElementById('navToggle');
-    const menu = document.getElementById('navMenu');
-
-    // Navbar jadi solid saat di-scroll
-    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 40);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
-    // Hamburger menu
-    const setMenu = (open) => {
-      menu.classList.toggle('open', open);
-      toggle.setAttribute('aria-expanded', open);
-      toggle.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
-      if (open) navbar.classList.add('scrolled');
-      else onScroll();
-    };
-    toggle.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
-  </script>
 </body>
 </html>
