@@ -1,79 +1,157 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batam Island Explorer - Panduan Liburan Batam</title>
-    <meta name="description" content="Panduan lengkap liburan ke Batam: itinerary, budget, hidden gems, dan tips praktis dari lokal.">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Batam Island Explorer | Jelajahi Keindahan Batam</title>
+  <meta name="description" content="Panduan wisata, itinerary, dan destinasi pantai terbaik di Batam dan pulau-pulau sekitarnya.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- HEADER & NAVIGASI -->
-    <header>
-        <div class="nav-container">
-            <div class="logo">Batam Explorer</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Destinasi</a></li>
-                    <li><a href="#">Itinerary</a></li>
-                    <li><a href="about.html">Tentang</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo"><i class="fa-solid fa-compass"></i> Batam Island Explorer</a>
 
-    <!-- HERO BANNER -->
-    <section class="hero">
-        <h1>Jelajahi Keindahan Batam</h1>
-        <p>Temukan panduan liburan, hidden gems, dan itinerary terbaik untuk perjalanan tak terlupakanmu.</p>
-        <a href="#artikel" class="btn">Mulai Jelajah</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinasi">Destinasi</a></li>
+        <li><a href="#itinerary">Itinerary</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Jelajahi Keindahan Batam</h1>
+          <p>Dari pantai berpasir putih sampai pulau-pulau kecil yang masih sepi. Temukan rute, tips, dan itinerary yang sudah kami coba sendiri.</p>
+          <a href="#destinasi" class="btn">Mulai Jelajahi</a>
+        </div>
+      </div>
     </section>
 
-    <!-- KONTEN UTAMA (DAFTAR ARTIKEL) -->
-    <main class="container" id="artikel">
-        <h2 class="section-title">Artikel Terbaru</h2>
-        
-        <div class="article-grid">
-            <!-- Kartu Artikel 1 -->
-            <article class="card">
-                <!-- Gambar pakai placeholder dulu, nanti bisa diganti -->
-                <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Itinerary Batam" class="card-img">
-                <div class="card-content">
-                    <h3><a href="artikel/itinerary-2d1n.html">Itinerary 2D1N di Batam dari Singapore</a></h3>
-                    <p>Rencana perjalanan lengkap 2 hari 1 malam dengan budget hemat tapi tetap seru.</p>
-                    <a href="artikel/itinerary-2d1n.html">Baca Selengkapnya &rarr;</a>
-                </div>
-            </article>
-
-            <!-- Kartu Artikel 2 -->
-            <article class="card">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pantai Batam" class="card-img">
-                <div class="card-content">
-                    <h3><a href="artikel/hidden-gems.html">5 Hidden Gems Pantai di Batam</a></h3>
-                    <p>Bukan cuma Nagoya, ini deretan pantai eksotis yang wajib kamu kunjungi.</p>
-                    <a href="artikel/hidden-gems.html">Baca Selengkapnya &rarr;</a>
-                </div>
-            </article>
-
-            <!-- Kartu Artikel 3 -->
-            <article class="card">
-                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ferry Batam" class="card-img">
-                <div class="card-content">
-                    <h3><a href="artikel/transportasi.html">Cara ke Batam: Panduan Ferry & Transportasi</a></h3>
-                    <p>Informasi harga tiket, jadwal, dan tips biar gak bingung pas nyampe di pelabuhan.</p>
-                    <a href="artikel/transportasi.html">Baca Selengkapnya &rarr;</a>
-                </div>
-            </article>
+    <!-- Artikel Terbaru -->
+    <section class="articles" id="destinasi">
+      <div class="container">
+        <div class="articles-head">
+          <h2 class="section-title">Artikel Terbaru</h2>
+          <p class="section-sub">Panduan perjalanan terbaru seputar Batam dan pulau-pulau di sekitarnya.</p>
         </div>
-    </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Batam Island Explorer. Dibuat dengan ❤️ untuk para pelancong.</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
-    </footer>
+        <div class="grid" id="itinerary">
+          <article class="card">
+            <a href="#" class="card-img">
+              <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80" alt="Pantai berpasir putih dengan air laut jernih" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag">Itinerary</span>
+              <h3>Itinerary 3 Hari 2 Malam Keliling Batam dan Barelang</h3>
+              <time datetime="2026-11-10"><i class="fa-regular fa-calendar"></i>10 November 2026</time>
+            </div>
+          </article>
 
+          <article class="card">
+            <a href="#" class="card-img">
+              <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=800&q=80" alt="Pantai tropis saat matahari terbenam" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag">Destinasi</span>
+              <h3>5 Pantai di Batam yang Cocok untuk Menikmati Sunset</h3>
+              <time datetime="2026-11-03"><i class="fa-regular fa-calendar"></i>3 November 2026</time>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="#" class="card-img">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Snorkeling di laut jernih" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag">Tips</span>
+              <h3>Panduan Island Hopping: Dari Pelabuhan sampai Pulau Terdekat</h3>
+              <time datetime="2026-10-27"><i class="fa-regular fa-calendar"></i>27 Oktober 2026</time>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kenapa Batam -->
+    <section id="tentang">
+      <div class="container why-grid">
+        <div class="why-text">
+          <h2 class="section-title">Kenapa Batam?</h2>
+          <p>Batam hanya sekitar 45 menit dari Singapura dengan feri, tapi suasananya jauh lebih santai. Pantai, jembatan ikonik, dan pulau-pulau kecil bisa dijelajahi dalam satu perjalanan singkat.</p>
+
+          <ul class="why-list">
+            <li>
+              <i class="fa-solid fa-ferry"></i>
+              <div><strong>Akses mudah</strong><span>Feri rutin dari Singapura dan Johor, plus bandara internasional.</span></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-umbrella-beach"></i>
+              <div><strong>Pantai dan pulau beragam</strong><span>Dari pantai keluarga sampai pulau yang masih sepi.</span></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-utensils"></i>
+              <div><strong>Kuliner dan harga bersahabat</strong><span>Seafood segar, kopi lokal, dan akomodasi untuk semua budget.</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="why-img">
+          <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=900&q=80" alt="Pemandangan pantai tropis dari atas" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Batam Island Explorer. Semua hak dilindungi.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+
+    // Navbar jadi solid saat di-scroll
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Hamburger menu
+    const setMenu = (open) => {
+      menu.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+      toggle.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+      if (open) navbar.classList.add('scrolled');
+      else onScroll();
+    };
+    toggle.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  </script>
 </body>
 </html>
