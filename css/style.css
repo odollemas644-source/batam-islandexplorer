@@ -209,3 +209,147 @@
     @media (prefers-reduced-motion: reduce) {
       * { transition: none !important; scroll-behavior: auto !important; }
     }
+    .article-page {
+      --navy: #06223f;
+      --orange: #f2a33a;
+      --text: #2b3a4a;
+      --muted: #6b7f94;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fa;
+      color: var(--text);
+    }
+
+    /* Navbar */
+    .article-page .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      box-shadow: 0 2px 14px rgba(6, 34, 63, .08);
+    }
+    .article-page .nav-inner {
+      width: min(1100px, 100% - 2rem);
+      margin: 0 auto;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .5rem 1.5rem;
+    }
+    .article-page .logo {
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .article-page .logo i { color: var(--orange); font-size: 1.35rem; }
+    .article-page .nav-menu {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .article-page .nav-menu a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: .95rem;
+      transition: color .2s;
+    }
+    .article-page .nav-menu a:hover { color: var(--orange); }
+
+    /* Container artikel */
+    .article-page .container {
+      max-width: 800px;
+      margin: 2.5rem auto;
+      padding: 2.5rem 2.5rem 3rem;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(6, 34, 63, .06);
+    }
+
+    /* Header & meta */
+    .article-header { margin-bottom: 1.8rem; }
+    .article-header h1 {
+      font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+      line-height: 1.25;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      color: var(--navy);
+      margin-bottom: 1.1rem;
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .6rem 1.2rem;
+      font-size: .88rem;
+      color: var(--muted);
+    }
+    .article-meta .category {
+      background: rgba(242, 163, 58, .15);
+      color: #b36b00;
+      font-weight: 600;
+      padding: .2rem .9rem;
+      border-radius: 999px;
+    }
+    .article-meta i { color: var(--orange); margin-right: .35rem; }
+
+    /* Gambar */
+    .article-page img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .article-img { margin: 0 0 2rem; }
+    .article-img img { width: 100%; aspect-ratio: 16 / 9; background: #0b3a66; }
+    .article-img figcaption { margin-top: .6rem; font-size: .82rem; color: var(--muted); text-align: center; }
+
+    /* Isi artikel */
+    .article-content p {
+      font-size: 1.02rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .article-content h2 {
+      font-size: 1.5rem;
+      line-height: 1.35;
+      color: var(--navy);
+      margin: 2.2rem 0 1rem;
+    }
+    .article-content ul { margin: 0 0 20px 1.3rem; }
+    .article-content li { line-height: 1.8; margin-bottom: .5rem; padding-left: .3rem; }
+    .article-content li::marker { color: var(--orange); }
+    .article-content a { color: var(--orange); font-weight: 500; }
+
+    /* Kotak highlight */
+    .highlight-box {
+      background: #f1f4f7;
+      border-left: 5px solid var(--orange);
+      border-radius: 0 12px 12px 0;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+    }
+    .highlight-box strong { display: block; color: var(--navy); margin-bottom: .3rem; }
+    .highlight-box p { margin-bottom: 0; font-size: .98rem; }
+
+    /* Footer */
+    .article-page footer {
+      background: var(--navy);
+      color: #b9c8d8;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .9rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 640px) {
+      .article-page .container { margin: 0; padding: 1.6rem 1.2rem 2.2rem; border-radius: 0; box-shadow: none; }
+      .article-page .nav-menu { gap: 1.1rem; }
+    }
