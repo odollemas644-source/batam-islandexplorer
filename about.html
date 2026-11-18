@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - Batam Island Explorer</title>
+  <meta name="description" content="Kenali lebih dekat Batam Island Explorer, website panduan wisata Batam yang membantu Anda merencanakan liburan sempurna di Pulau Batam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-compass"></i>
+        <span>Batam Island Explorer</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#destinasi">Destinasi</a></li>
+        <li><a href="index.html#itinerary">Itinerary</a></li>
+        <li><a href="about.html" class="active">Tentang</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Tentang Kami</h1>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="content-wrapper">
+        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1000&q=80" alt="Pemandangan Batam Island" class="content-img">
+        
+        <p>Batam Island Explorer adalah platform digital yang didedikasikan untuk membantu wisatawan menemukan keindahan tersembunyi Pulau Batam dan sekitarnya. Kami percaya bahwa setiap perjalanan harus menjadi pengalaman yang berkesan dan mudah direncanakan.</p>
+        
+        <h2>Visi Kami</h2>
+        <p>Menjadi sumber informasi wisata terpercaya dan terlengkap untuk destinasi Batam, yang menginspirasi lebih banyak orang untuk mengeksplorasi kekayaan alam dan budaya Kepulauan Riau.</p>
+        
+        <h2>Misi Kami</h2>
+        <ul>
+          <li>Menyediakan panduan destinasi yang akurat dan up-to-date.</li>
+          <li>Membuat itinerary yang praktis untuk berbagai jenis wisatawan.</li>
+          <li>Mempromosikan pariwisata berkelanjutan dan bertanggung jawab.</li>
+          <li>Menghubungkan wisatawan dengan pengalaman lokal yang autentik.</li>
+        </ul>
+        
+        <p>Tim kami terdiri dari pecinta traveling dan penduduk lokal Batam yang memiliki pengetahuan mendalam tentang pulau ini. Kami terus memperbarui konten agar Anda selalu mendapatkan informasi terbaik.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <i class="fas fa-compass"></i>
+          <span>Batam Island Explorer</span>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Batam Island Explorer. All rights reserved. | <a href="privacy.html">Kebijakan Privasi</a> | <a href="contact.html">Kontak</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

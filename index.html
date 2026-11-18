@@ -1,149 +1,182 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batam Island Explorer - Panduan Liburan</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-    <style>
-        
- /* CSS Tambahan khusus halaman depan */
-               /* CSS Hero Section Baru */
-        .hero { 
-            text-align: center; 
-            padding: 120px 20px; /* Dibikin lebih tinggi biar megah */
-            /* Pakai gambar pantai tropis dari Unsplash + overlay gelap */
-            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; 
-            color: white; 
-        }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
-        .btn { background: var(--accent-color); color: white; padding: 14px 32px; border-radius: 30px; font-weight: 600; font-size: 1rem; transition: 0.3s; }
-        .btn:hover { background: #e68a00; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 200px; object-fit: cover; }
-        .card-body { padding: 20px; }
-        .card-body h3 { margin: 10px 0; color: var(--primary-color); font-size: 1.2rem; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batam Island Explorer - Jelajahi Keindahan Batam</title>
+  <meta name="description" content="Jelajahi keindahan Pulau Batam dengan panduan destinasi, itinerary, hotel, dan kuliner terbaik. Temukan pengalaman wisata yang tak terlupakan di Batam Island Explorer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fa-solid fa-compass" style="color: var(--accent-color);"></i> Batam Island Explorer
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-compass"></i>
+        <span>Batam Island Explorer</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#destinasi">Destinasi</a></li>
+        <li><a href="#itinerary">Itinerary</a></li>
+        <li><a href="about.html">Tentang</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jelajahi Keindahan Batam</h1>
+      <p>Temukan pantai tropis, pulau eksotis, dan pengalaman wisata terbaik di Kepulauan Riau</p>
+      <a href="#kategori" class="btn">Mulai Jelajah</a>
+    </div>
+  </section>
+
+  <!-- Why Batam -->
+  <section class="section" id="kenapa">
+    <div class="container">
+      <div class="why-batam">
+        <div class="why-text">
+          <h2>Kenapa Batam?</h2>
+          <p>Batam adalah destinasi wisata yang sempurna menggabungkan keindahan alam tropis dengan kemudahan akses. Dari pantai berpasir putih hingga kuliner khas Melayu yang lezat, Batam menawarkan pengalaman yang lengkap bagi setiap wisatawan.</p>
+          <div class="advantages">
+            <div class="advantage">
+              <i class="fas fa-ship"></i>
+              <div>
+                <h3>Akses Mudah</h3>
+                <p>Hanya 1 jam dari Singapura dengan ferry cepat.</p>
+              </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Destinasi</a></li>
-                    <li><a href="#">Itinerary</a></li>
-                    <li><a href="#">Tentang</a></li>
-                </ul>
-            </nav>
+            <div class="advantage">
+              <i class="fas fa-umbrella-beach"></i>
+              <div>
+                <h3>Pantai Indah</h3>
+                <p>Pantai Nongsa, Tanjung Pinggir, dan banyak lagi.</p>
+              </div>
+            </div>
+            <div class="advantage">
+              <i class="fas fa-utensils"></i>
+              <div>
+                <h3>Kuliner Kaya</h3>
+                <p>Makanan laut segar dan masakan Melayu otentik.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <section class="hero">
-        <h1>Jelajahi Keindahan Batam</h1>
-        <p>Temukan panduan liburan, hidden gems, dan itinerary terbaik.</p>
-        <a href="#" class="btn">Mulai Jelajah</a>
-    </section>
-
-    <main class="grid">
-        <!-- KARTU ARTIKEL 1 -->
-        <article class="card">
-            <a href="artikel/template.html">
-                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Pantai">
-            </a>
-            <div class="card-body">
-                <span class="tag">Itinerary</span>
-                <h3><a href="artikel/template.html">Itinerary 3 Hari 2 Malam Batam</a></h3>
-            </div>
-        </article>
-
-        <!-- KARTU ARTIKEL 2 (Contoh) -->
-        <article class="card">
-            <a href="artikel/template.html">
-                <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=600&q=80" alt="Pulau">
-            </a>
-            <div class="card-body">
-                <span class="tag">Hidden Gems</span>
-                <h3><a href="artikel/template.html">5 Pantai Tersembunyi di Batam</a></h3>
-            </div>
-        </article>
-    </main>
-    <!-- SECTION 1: KENAPA BATAM? (Biar Orang Percaya) -->
-    <section style="max-width: 1100px; margin: 60px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
-        <div style="flex: 1; min-width: 300px;">
-            <h2 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 20px;">Kenapa Liburan ke Batam?</h2>
-            <p style="margin-bottom: 20px; font-size: 16px; color: var(--text-light);">Batam cuma butuh 45 menit dari Singapura pakai ferry, tapi suasananya jauh lebih santai. Pantai, jembatan ikonik, dan pulau-pulau kecil bisa dijelajahi dalam satu perjalanan singkat.</p>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <i class="fa-solid fa-ship" style="color: var(--accent-color); font-size: 20px; margin-top: 4px;"></i>
-                    <div><strong>Akses Mudah</strong><br><span style="color: var(--text-light); font-size: 14px;">Ferry rutin dari Singapura dan Johor.</span></div>
-                </li>
-                <li style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <i class="fa-solid fa-umbrella-beach" style="color: var(--accent-color); font-size: 20px; margin-top: 4px;"></i>
-                    <div><strong>Pantai Eksotis</strong><br><span style="color: var(--text-light); font-size: 14px;">Dari pantai keluarga sampai pulau yang masih sepi.</span></div>
-                </li>
-                <li style="margin-bottom: 15px; display: flex; gap: 15px;">
-                    <i class="fa-solid fa-utensils" style="color: var(--accent-color); font-size: 20px; margin-top: 4px;"></i>
-                    <div><strong>Kuliner Murah</strong><br><span style="color: var(--text-light); font-size: 14px;">Seafood segar dan harga yang bersahabat.</span></div>
-                </li>
-            </ul>
+        <div class="why-image">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80" alt="Pemandangan pulau tropis Batam dari udara">
         </div>
-        <div style="flex: 1; min-width: 300px;">
-            <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=800&q=80" alt="Pulau Batam" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- SECTION 2: KATEGORI POPULER (Biar Gampang Navigasi) -->
-    <section style="background: var(--white); padding: 60px 20px; text-align: center;">
-        <h2 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 40px;">Jelajahi Berdasarkan Kategori</h2>
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto;">
-            <!-- Kotak 1 -->
-            <div style="background: var(--bg-color); padding: 30px; border-radius: 12px; width: 200px; transition: 0.3s; cursor: pointer;">
-                <i class="fa-solid fa-map-location-dot" style="font-size: 30px; color: #0284c7; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.1rem;">Destinasi</h3>
-            </div>
-            <!-- Kotak 2 -->
-            <div style="background: var(--bg-color); padding: 30px; border-radius: 12px; width: 200px; transition: 0.3s; cursor: pointer;">
-                <i class="fa-solid fa-route" style="font-size: 30px; color: #fca311; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.1rem;">Itinerary</h3>
-            </div>
-            <!-- Kotak 3 -->
-            <div style="background: var(--bg-color); padding: 30px; border-radius: 12px; width: 200px; transition: 0.3s; cursor: pointer;">
-                <i class="fa-solid fa-bed" style="font-size: 30px; color: #10b981; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.1rem;">Hotel</h3>
-            </div>
-            <!-- Kotak 4 -->
-            <div style="background: var(--bg-color); padding: 30px; border-radius: 12px; width: 200px; transition: 0.3s; cursor: pointer;">
-                <i class="fa-solid fa-utensils" style="font-size: 30px; color: #ef4444; margin-bottom: 15px;"></i>
-                <h3 style="font-size: 1.1rem;">Kuliner</h3>
-            </div>
-        </div>
-    </section>
+  <!-- Categories -->
+  <section class="section bg-white" id="kategori">
+    <div class="container">
+      <h2 class="section-title">Jelajahi Kategori</h2>
+      <div class="categories">
+        <a href="#destinasi" class="category-card">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Destinasi</h3>
+        </a>
+        <a href="#itinerary" class="category-card">
+          <i class="fas fa-route"></i>
+          <h3>Itinerary</h3>
+        </a>
+        <a href="#" class="category-card">
+          <i class="fas fa-hotel"></i>
+          <h3>Hotel</h3>
+        </a>
+        <a href="#" class="category-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Kuliner</h3>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- SECTION 3: BANNER NEWSLETTER / CTA (Biar Keliatan Pro) -->
-    <section style="background: linear-gradient(135deg, var(--primary-color), #1e293b); padding: 60px 20px; text-align: center; color: white; margin-top: 40px;">
-        <div style="max-width: 600px; margin: 0 auto;">
-            <h2 style="font-size: 2rem; margin-bottom: 15px;">Dapatkan Tips Liburan Hemat!</h2>
-            <p style="margin-bottom: 30px; opacity: 0.8;">Berlangganan newsletter kami untuk mendapatkan info terbaru seputar wisata Batam langsung di inbox kamu.</p>
-            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                <input type="email" placeholder="Masukkan email kamu..." style="padding: 12px 20px; border-radius: 30px; border: none; width: 300px; outline: none;">
-                <button style="background: var(--accent-color); color: white; padding: 12px 30px; border-radius: 30px; border: none; font-weight: bold; cursor: pointer;">Berlangganan</button>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2026 Batam Island Explorer. Dibuat dengan ❤️ untuk para pelancong.</p>
-    </footer>
+  <!-- Articles -->
+  <section class="section" id="artikel">
+    <div class="container">
+      <h2 class="section-title">Artikel Terbaru</h2>
+      <div class="articles-grid">
+        <a href="artikel/template.html" class="article-card">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Pantai tropis di Batam">
+          <div class="article-content">
+            <span class="tag">Destinasi</span>
+            <h3>5 Pantai Terindah di Batam yang Wajib Dikunjungi</h3>
+            <p class="date">12 November 2026</p>
+          </div>
+        </a>
+        <a href="artikel/template.html" class="article-card">
+          <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80" alt="Jembatan Barelang Batam">
+          <div class="article-content">
+            <span class="tag">Itinerary</span>
+            <h3>Itinerary 3 Hari di Batam untuk First Timer</h3>
+            <p class="date">8 November 2026</p>
+          </div>
+        </a>
+        <a href="artikel/template.html" class="article-card">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Makanan laut segar Batam">
+          <div class="article-content">
+            <span class="tag">Kuliner</span>
+            <h3>10 Kuliner Khas Batam yang Harus Dicoba</h3>
+            <p class="date">5 November 2026</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Newsletter -->
+  <section class="newsletter section">
+    <div class="container">
+      <h2>Dapatkan Tips Wisata Terbaru</h2>
+      <p>Berlangganan newsletter kami untuk rekomendasi destinasi dan promo menarik.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Masukkan email Anda" required>
+        <button type="submit" class="btn">Berlangganan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <i class="fas fa-compass"></i>
+          <span>Batam Island Explorer</span>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Batam Island Explorer. All rights reserved. | <a href="privacy.html">Kebijakan Privasi</a> | <a href="contact.html">Kontak</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
